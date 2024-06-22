@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+  <div class="wrapper">
+  <!-- Rating state start -->
+
+    <img src="images/icon-star.svg" alt="star">
+    
+    <h2>How did we do?</h2>
+      <p>Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+      </p>
+      <div class="mid">
+    <div class="numbers">
+      <div class="one" onclick="changeColor(this) , selectRating(1)">1</div>
+      <div class="one" onclick="changeColor(this) , selectRating(2)">2</div>
+      <div class="one" onclick="changeColor(this) , selectRating(3)">3</div>
+      <div class="one" onclick="changeColor(this) , selectRating(4)">4</div>
+      <div class="one" onclick="changeColor(this) , selectRating(5)">5</div>
+    </div>
+    <a href="thank.html"><div class="btn btn-one">Submit</div></a>
+    </div>
+  </div>
+  </div>
+
+  <script>
+    let selectedDiv = null;
+
+    function changeColor(div) {
+        if (selectedDiv !== null) {
+            selectedDiv.style.backgroundColor = '';
+            selectedDiv.style.color = '';
+        }
+
+        div.style.backgroundColor = 'white';
+        div.style.color = 'black';
+        selectedDiv = div;
+    }
+
+    function selectRating(one) {
+            localStorage.setItem('selectedRating', one);
+
+            // window.save.href = 'thank.html';
+        }
+
+</script>
+</body>
+</html>

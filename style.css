@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(216, 12%, 8%);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Overpass';
+}
+
+
+h2 {
+    padding: .6rem 0;
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    padding: .4rem 0;
+    color: hsl(217, 12%, 63%);
+}
+
+.wrapper {
+    background: hsl(213, 19%, 18%);
+    border-radius: 4%;
+    width: 350px;
+    height: 363px;
+    padding: 2rem;
+}
+
+.wrapper img {
+    border-radius: 100%;
+    margin-bottom: .7rem;
+    background: hsl(210, 19%, 21%);
+    padding: .7rem;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: hsl(0, 0%, 100%);
+}
+
+.one {
+    background: hsl(210, 19%, 21%);
+    border-radius: 100%;
+    padding: .8rem 1.18rem;
+    margin-top: 1rem;
+    margin-bottom: 1.1rem;
+
+}
+
+.one:hover {
+    color: black;
+    background: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+.mid, .numbers div{
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    text-align: center;
+}
+
+
+.btn-one {
+    color: black;
+    background: hsl(25, 97%, 53%);
+    padding: .7rem 7.4rem;
+}
+
+.btn-two{
+    color: hsl(25, 97%, 53%);
+    background: hsl(210, 19%, 21%);
+    padding: .5rem 1.7rem;
+    margin-top: 1.7rem;
+    cursor: initial;
+}
+
+.btn-one:hover{
+    background: hsl(0, 0%, 100%);
+    
+}
+
+/* Thank */
+.wrapper-2 {
+    background: hsl(213, 19%, 18%);
+    border-radius: 4%;
+    width: 350px;
+    height: 363px;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.wrapper-2 p {
+    margin-top: 1.4rem;
+}
